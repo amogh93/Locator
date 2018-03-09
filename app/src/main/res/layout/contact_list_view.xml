@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/userImage"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/phoneNumber"
+        android:layout_alignTop="@+id/userName"/>
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/userImage"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginStart="5dp"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userName"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/userImage"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginStart="5dp"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/lastSeen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_below="@+id/phoneNumber"
+        android:textSize="10sp"/>
+
+</RelativeLayout>

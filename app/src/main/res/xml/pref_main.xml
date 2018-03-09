@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Privacy">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="my_location"
+            android:summary="Respond to the location request from friends by sending them your current location"
+            android:title="Honor location requests"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="General">
+        <Preference
+            android:title="Change mobile number"
+            android:summary="Change registered mobile number"
+            android:key="change_number"/>
+
+        <Preference
+            android:title="Delete account"
+            android:summary="Delete your account"
+            android:key="delete_account"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Permissions">
+        <Preference
+            android:title="Ignore battery optimizations"
+            android:key="battery_optimization"
+            android:summary="Click to grant the permission"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Info">
+        <Preference
+            android:title="Version"
+            android:summary="0.0.1 beta"/>
+        <Preference
+            android:title="About"
+            android:key="about_app"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
